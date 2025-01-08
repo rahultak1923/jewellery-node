@@ -1,1 +1,3 @@
-// bhjbj dsfsdfsd
+const connectToMongo = require('./db');
+
+connectToMongo();
