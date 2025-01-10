@@ -11,7 +11,7 @@ router.post('/',[
 ],(req,res)=>{
     // body me jo apne likha usko read kiya 
    const errors = validationResult(req);
-//    agar koi filed empty hai to uska error show karna  hai 
+//    agar koi filed empty hai to uska error show karna 
    if(!errors.isEmpty()){
     return res.status(400).json({errors: errors.array()})
    }
