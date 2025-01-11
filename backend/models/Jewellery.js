@@ -1,8 +1,13 @@
 const { type } = require('@testing-library/user-event/dist/type')
 const mongoose = require('mongoose')
+const {Schema} = mongoose;
 
 const JewellerySchema = new mongoose.Schema({
     // images add karne ka bi schema banana hai 
+    user:{
+        type: mongoose.Schema.Types.ObjectId,
+        ref:'user'
+    },
     name:{
         type: String,
         required: true,
@@ -15,6 +20,10 @@ const JewellerySchema = new mongoose.Schema({
     price:{
         type: String,
         required: true,
+    },
+    quantity:{
+        type: String,
+        required: true
     },
     date:{
         type: Date,
