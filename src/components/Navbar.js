@@ -28,7 +28,7 @@ const Navbar = () => {
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled">Disabled</a>
+          <a class="nav-link disabled">Disabledc</a>
         </li>
       </ul>
       <form class="d-flex" role="search">
