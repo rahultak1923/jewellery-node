@@ -8,14 +8,13 @@ const JewellerySchema = new mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId,
         ref:'user'
     },
-    name:{
+    jewelleryname:{
         type: String,
         required: true,
     },
     description:{
         type: String,
         required: true,
-        unique: true,
     },
     price:{
         type: String,
